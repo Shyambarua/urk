@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Resource Kit</title>
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mmm.css">
+    <link rel="stylesheet" href="circle.css">
+    <!-- <link rel="stylesheet" href="nav.css"> -->
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <aside id="navbar" class="navbar">
+            <img src="assets/butterfly-logo.png" alt="">
+            <div class="search">
+            <i class='bx bx-search icon'></i>
+            <input type="text" placeholder="Search..." class="place">
+        </div>
+            <ul class="midnav">
+                <li><a href=""><i class='bx bx-home-alt icon'></i>
+                    <span class="text nav-text"><span>Dashboard</span></a></li>
+                <li><a href="#">
+                    <i class='bx bx-bar-chart-alt-2 icon'></i>
+                    <span class="text nav-text"><span>Revenue</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-news icon'></i>
+                    <span class="text nav-text"><span>News</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-pie-chart-alt icon'></i>
+                    <span class="text nav-text"><span>Analytics</span>
+                </a></li>
+            </ul>
+            <ul class="bottomnav">
+                <li><a href="#">
+                    <i class='bx bx-bell icon'></i>
+                    <span class="text nav-text">Notifications</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-log-in icon'></i>
+                    <span class="text nav-text">LogIn</span>
+                </a></li>
+            </ul>
+
+        </aside>
+
+        <!-- left profile -->
+        <section id="left">
+            <div class="profile">
+                <img src="assets/profile image.jpg" alt="">
+                <div class="heading1">
+                    <h1>Hi Mike,</h1>
+                    <p>welcome back.</p>
+                </div>
+            </div>
+            <br>
+            <div class="trans">
+                <h2>Today</h2>
+                <br>
+                <h1>$19,892</h1>
+                <p>Account balance</p>
+                <br>
+                <div class="year">
+                    <div class="year1">
+                        <h2>$4,000</h2>
+                        <p>Year-to-Date Contribution</p>
+                    </div>
+                    <br>
+                    <div class="year2">
+                        <h3>$1,892</h3>
+                        <p>Total Interest</p>
+                    </div>
+                </div>
+                <br>
+                <button class="button">I want To</button>
+            </div>
+            <br><br>
+            <div class="recent">
+                <h2>Recent Transactions</h2>
+                <br>
+                <p>2020-08-07</p>
+                <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                
+                <hr class="hori">
+                
+                <p>2020-08-07</p>
+                <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                
+                <hr class="hori">
+                
+                <p>2020-08-07</p>
+                <h5>Withdrawal Transfer to Bank-XXX11</h5>
+            </div>
+        </section>
+
+
+
+        <!-- mid charts -->
+        <section id="right">
+            <br><br>
+            <div class="heading2">
+                <p><strong>Retirement Income</strong></p>
+                <h2>Starting Year 2056</h2>
+            </div>
+            <br>
+            <div class="goal">
+                <div class="goal1">
+                    <h1>$300,000</h1>
+                    <p>My Goal</p>
+                    <hr>
+                </div>
+                <div class="goalp">
+                    <div class="goal2">
+                        <h1>59%</h1>
+                        <p>Goal Achieved</p>
+                        <hr>
+                    </div>
+                    <div class="goal3">
+                        <h1>$300</h1>
+                        <p>Est. Monthly Income</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="chartMenu">
+                <p><strong>Contributions Overtime</strong> </p>
+            </div>
+            <div class="chartCard">
+                <div class="chartBox">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="heading3">
+                <h2>How do I compare to my peers?</h2>
+                <p>These numbers represent current goal achievement</p>
+            </div>
+            <br>
+            <div class="form">
+                <form action="#">
+                    <label for="Age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="Under 30" selected>Under 30</option>
+                        <option value="Under 40">Under 40</option>
+                        <option value="Under 50">Under 50</option>
+                        <option value="Under 60">Under 60</option>
+                    </select>
+                    <br>
+                    <label for="Salary">Salary:</label>
+                    <select id="Salary" name="Salary">
+                        <option value="k 20-k 30" selected>k 20-k 30</option>
+                        <option value="k 20-k 30">k 30-k 40</option>
+                        <option value="k 20-k 30">k 40-k 50</option>
+                        <option value="k 20-k 30">k 50-k 60</option>
+                    </select>
+                    <br>
+                    <label for="Gender">Gender:</label>
+                    <select id="Gender" name="Gender">
+                        <option value="None" selected>None</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+                    </select>
+                </form>
+                
+
+        </section>
+
+
+
+        <!-- aside range -->
+        <aside id="strategy">
+            <br><br><br>
+            <div class="heading4">
+                <h2>Retirement Strategy</h2>
+            </div>
+            <br><br><br>
+            <div class="range">
+                <strong>Employee Contribution</strong>
+                <br>
+                <!-- <input type="range" min="0%" max="100%" class="ecrange"> -->
+                <input type="range" value="24" min="0" max="100" oninput="this.nextElementSibling.value = this.value"
+                    class="ecrange">
+                <output>24</output>%
+                <br><br>
+                <strong>Retirement Age</strong>
+                <br>
+                <!-- <input type="range" min="0%" max="100%" class="ecrange"> -->
+                <input type="range" value="24" min="0" max="100" oninput="this.nextElementSibling.value = this.value"
+                    class="ecrange">
+                <output>24</output>
+
+            </div>
+            <hr class="hori1">
+            <br>
+            <div class="info">
+                <table>
+                    <tr>
+                        <td><strong>Employer Contribution</strong></td>
+                        <th>8.4%</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Interest Rate</strong></td>
+                        <th>5%</th>
+                    </tr>
+                </table>
+
+                <button class="button2">Update</button>
+                <br><br>
+                <a href="#">View Help Docs ></a>
+
+            </div>
+            <br>
+            <div class="housing">
+                <div class="vl">
+                    <h4>Are You Considering a</h4>
+                    <h3><strong>Housing Advance?</strong></h3>
+                    <p>Limited time reduced Interest</p>
+                    <a href="#">Learn More ></a>
+                </div>
+
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+<script>
+    // setup 
+    const data = {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+            label: 'Weekly Sales',
+            data: [18, 12, 6, 9, 12, 3, 9],
+            backgroundColor: [
+                'rgba(255, 26, 104, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(0, 0, 0, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 26, 104, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(0, 0, 0, 1)'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    // config 
+    const config = {
+        type: 'bar',
+        data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+    // render init block
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    // Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
+</script>
+<!-- <script>
+    const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        
+        modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            modeText.innerText = "Light mode";
+        } else {
+            modeText.innerText = "Dark mode";
+
+        }
+    });
+</script> -->
+
+
+</html>
