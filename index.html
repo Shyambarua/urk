@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Resource Kit</title>
+    <title>Document</title>
     <!-- Montserrat Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -14,8 +14,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="mmm.css">
-    
+    <link rel="stylesheet" href="mmm1.css">
+    <link rel="stylesheet" href="circle.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="phone.css">
 </head>
 
@@ -23,50 +24,101 @@
     <div class="grid-container">
 
         <aside id="navbar" class="navbar">
-            <img src="butterfly-logo.png" alt="">
-            <div class="search">
-            <i class='bx bx-search icon'></i>
-            <input type="text" placeholder="Search..." class="place">
-        </div>
-            <ul class="midnav">
-                <li><a href=""><i class='bx bx-home-alt icon'></i>
-                    <span class="text nav-text"><span>Dashboard</span></a></li>
-                <li><a href="#">
-                    <i class='bx bx-bar-chart-alt-2 icon'></i>
-                    <span class="text nav-text"><span>Revenue</span>
-                </a></li>
-                <li><a href="#">
-                    <i class='bx bx-news icon'></i>
-                    <span class="text nav-text"><span>News</span>
-                </a></li>
-                <li><a href="#">
-                    <i class='bx bx-pie-chart-alt icon'></i>
-                    <span class="text nav-text"><span>Analytics</span>
-                </a></li>
-            </ul>
-            <ul class="bottomnav">
-                <li><a href="#">
-                    <i class='bx bx-bell icon'></i>
-                    <span class="text nav-text">Notifications</span>
-                </a></li>
-                <li><a href="#">
-                    <i class='bx bx-log-in icon'></i>
-                    <span class="text nav-text">LogIn</span>
-                </a></li>
-            </ul>
+            <nav class="sidebar close">
+                <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/butterfly-logo.png" alt="">
+                </span>
 
+                
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-news icon'></i>
+                            <span class="text nav-text">News</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Notifications</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-in icon'></i>
+                        <span class="text nav-text">LogIn</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
         </aside>
+
+        
 
         <!-- left profile -->
         <section id="left">
             <div class="profile">
-                <img src="profile image.jpg" alt="">
+                <img src="assets/profile image.jpg" alt="">
                 <div class="heading1">
                     <h1>Hi Mike,</h1>
                     <p>welcome back.</p>
                 </div>
             </div>
-            <br>
+            <br><br>
             <div class="trans">
                 <h2>Today</h2>
                 <br>
@@ -84,7 +136,7 @@
                         <p>Total Interest</p>
                     </div>
                 </div>
-                <br>
+                <br><br>
                 <button class="button">I want To</button>
             </div>
             <br><br>
@@ -93,14 +145,14 @@
                 <br>
                 <p>2020-08-07</p>
                 <h5>Withdrawal Transfer to Bank-XXX11</h5>
-                
+                <br>
                 <hr class="hori">
-                
+                <br>
                 <p>2020-08-07</p>
                 <h5>Withdrawal Transfer to Bank-XXX11</h5>
-                
+                <br>
                 <hr class="hori">
-                
+                <br>
                 <p>2020-08-07</p>
                 <h5>Withdrawal Transfer to Bank-XXX11</h5>
             </div>
@@ -115,7 +167,7 @@
                 <p><strong>Retirement Income</strong></p>
                 <h2>Starting Year 2056</h2>
             </div>
-            <br>
+            <br><br>
             <div class="goal">
                 <div class="goal1">
                     <h1>$300,000</h1>
@@ -177,7 +229,6 @@
 
                     </select>
                 </form>
-                
 
         </section>
 
@@ -207,7 +258,7 @@
 
             </div>
             <hr class="hori1">
-            <br>
+            <br><br><br>
             <div class="info">
                 <table>
                     <tr>
@@ -225,7 +276,7 @@
                 <a href="#">View Help Docs ></a>
 
             </div>
-            <br>
+            <br><br><br>
             <div class="housing">
                 <div class="vl">
                     <h4>Are You Considering a</h4>
@@ -293,7 +344,7 @@
     const chartVersion = document.getElementById('chartVersion');
     chartVersion.innerText = Chart.version;
 </script>
-<!-- <script>
+<script>
     const body = document.querySelector('body'),
         sidebar = body.querySelector('nav'),
         toggle = body.querySelector(".toggle"),
@@ -312,16 +363,22 @@
     })
 
     modeSwitch.addEventListener("click", () => {
-        body.classList.toggle("dark");
-
-        if (body.classList.contains("dark")) {
-            modeText.innerText = "Light mode";
-        } else {
-            modeText.innerText = "Dark mode";
-
-        }
+        
+        if (modeSwitch.classList.contains("mode-toggle")) {
+            body.classList.add("dark");
+            modeSwitch.classList.remove("mode-toggle");
+            modeText.innerText = "Light Mode";
+            } else {
+                body.classList.remove("dark");
+                modeSwitch.classList.add("mode-toggle");
+                modeText.innerText = "Dark Mode";
+                }
     });
-</script> -->
+
+
+    
+
+</script>
 
 
 </html>
